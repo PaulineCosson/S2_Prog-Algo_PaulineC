@@ -83,3 +83,24 @@ Fraction& Fraction::operator+=(Fraction const& f) {
     *this = simplify(*this);
     return *this;
 }
+
+Fraction& Fraction::operator-=(Fraction const& f) {
+    numerator = numerator * f.denominator - f.numerator * denominator;
+    denominator = denominator * f.denominator;
+    *this = simplify(*this);
+    return *this;
+}
+
+Fraction& Fraction::operator*=(Fraction const& f) {
+    numerator *= f.numerator;
+    denominator *= f.denominator;
+    *this = simplify(*this);
+    return *this;
+}
+
+Fraction& Fraction::operator/=(Fraction const& f) {
+    numerator *= f.denominator;
+    denominator *= f.numerator;
+    *this = simplify(*this);
+    return *this;
+}

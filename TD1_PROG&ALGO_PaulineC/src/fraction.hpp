@@ -8,6 +8,9 @@ struct Fraction {
 
     // void display();
     Fraction& Fraction::operator+=(Fraction const& f);
+    Fraction& Fraction::operator-=(Fraction const& f);
+    Fraction& Fraction::operator*=(Fraction const& f);
+    Fraction& Fraction::operator/=(Fraction const& f);
 };
 
 std::ostream& operator<<(std::ostream& os, Fraction const& f);
