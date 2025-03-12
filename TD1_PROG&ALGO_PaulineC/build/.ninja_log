@@ -1,6 +1,0 @@
-# ninja log v6
-19	50	7628747695956015	C:/Users/cosso/Documents/00_COURS_IMAC_1/S2_IMAC2/PROG/TD1_FractionS2_Prog&Algo_PaulineC/build/CMakeFiles/cmake.verify_globs	35aabb7d933ec947
-64	503	7628747696408784	CMakeFiles/main.dir/src/utils.cpp.obj	43cec9290ddbd222
-55	504	7628747696311938	CMakeFiles/main.dir/src/main.cpp.obj	6ecf6055c1fc3a04
-506	619	7628747700816734	C:/Users/cosso/Documents/00_COURS_IMAC_1/S2_IMAC2/PROG/TD1_FractionS2_Prog&Algo_PaulineC/bin/Debug/main.exe	9fe24e3dbb00b74a
-60	505	7628747696366210	CMakeFiles/main.dir/src/fraction.cpp.obj	9e249cf9bf6d71db

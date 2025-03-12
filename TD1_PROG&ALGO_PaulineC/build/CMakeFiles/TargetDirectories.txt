@@ -1,3 +1,0 @@
-C:/Users/cosso/Documents/00_COURS_IMAC_1/S2_IMAC2/PROG/TD1_FractionS2_Prog&Algo_PaulineC/build/CMakeFiles/main.dir
-C:/Users/cosso/Documents/00_COURS_IMAC_1/S2_IMAC2/PROG/TD1_FractionS2_Prog&Algo_PaulineC/build/CMakeFiles/edit_cache.dir
-C:/Users/cosso/Documents/00_COURS_IMAC_1/S2_IMAC2/PROG/TD1_FractionS2_Prog&Algo_PaulineC/build/CMakeFiles/rebuild_cache.dir
