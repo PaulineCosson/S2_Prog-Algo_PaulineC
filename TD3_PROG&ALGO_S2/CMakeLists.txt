@@ -5,4 +5,4 @@ project(${FolderName}_Project)
 file(GLOB CPP_FILES src/*.cpp)
 
 add_executable(${PROJECT_NAME} ${CPP_FILES})
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_23)
