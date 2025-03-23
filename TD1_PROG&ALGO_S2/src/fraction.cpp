@@ -68,7 +68,7 @@ bool operator>=(Fraction const& f1, Fraction const& f2) {
 
 
 //exo 5
-Fraction Fraction::operator+=(Fraction const& f) {
+Fraction& Fraction::operator+=(Fraction const& f) {
     numerator = numerator * f.denominator + f.numerator * denominator;
     denominator = denominator * f.denominator;
     *this = simplify(*this);
@@ -172,4 +172,4 @@ Fraction operator/(int const i, Fraction const& f){
     return simplify({iFraction/f});
 }
 
-// 2/
+

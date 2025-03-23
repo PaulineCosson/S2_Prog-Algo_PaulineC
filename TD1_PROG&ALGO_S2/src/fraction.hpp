@@ -7,13 +7,15 @@ struct Fraction {
     int denominator;
 
     // void display();
-    Fraction operator+=(Fraction const& f);
+    Fraction& operator+=(Fraction const& f);
     Fraction& operator-=(Fraction const& f);
     Fraction& operator*=(Fraction const& f);
     Fraction& operator/=(Fraction const& f);
 
     float to_float() const;
     operator float() const;
+
+    Fraction operatorabs();
 };
 
 std::ostream& operator<<(std::ostream& os, Fraction const& f);
