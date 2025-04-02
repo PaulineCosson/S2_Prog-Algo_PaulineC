@@ -10,8 +10,11 @@ int main()
     std::getline(std::cin, expression);
     // std::cout << expression;
     std::vector<std::string> tokens {split_string(expression)};
-
-    float result {npi_evaluate(tokens)};
+    std::vector<Token> vecTokens{tokenize(tokens)};
+    float result {npi_evaluate(vecTokens)};
     std::cout << result;
+
+
+
 
 }

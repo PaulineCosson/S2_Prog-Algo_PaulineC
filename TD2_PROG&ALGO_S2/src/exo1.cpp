@@ -1,4 +1,5 @@
 #include "exo1.hpp"
+#include <iostream>
 
 std::vector<std::string> split_string(std::string const& s)
 {
@@ -41,6 +42,11 @@ float npi_evaluate(std::vector<std::string> const& tokens){
         stack.push(result);
             }
     }
-
-    return stack.top(); 
+    if (stack.size() != 1) {
+        std::cout << "Erreur: Problème dans l'expression NPI" << std::endl;
+        return 0;
+    }
+    else{
+        return stack.top(); 
+    }
 }
