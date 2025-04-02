@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
-project(${FolderName}_Project)
+# get_filename_component(FolderName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+project(TP5_Project)
 
 # Trouve tous les fichiers .cpp dans mon répertoire src
 file(GLOB CPP_FILES src/*.cpp)

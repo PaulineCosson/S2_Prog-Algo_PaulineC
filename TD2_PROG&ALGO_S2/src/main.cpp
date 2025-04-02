@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "utils.hpp"
+#include "exo1.hpp"
+#include "exo2.hpp"
 
 int main()
 {
@@ -11,6 +12,6 @@ int main()
     std::vector<std::string> tokens {split_string(expression)};
 
     float result {npi_evaluate(tokens)};
-    std::cout << npi_evaluate;
+    std::cout << result;
 
 }

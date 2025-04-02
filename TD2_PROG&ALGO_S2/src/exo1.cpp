@@ -1,4 +1,4 @@
-#include "utils.hpp"
+#include "exo1.hpp"
 
 std::vector<std::string> split_string(std::string const& s)
 {
@@ -42,5 +42,5 @@ float npi_evaluate(std::vector<std::string> const& tokens){
             }
     }
 
-
+    return stack.top(); 
 }
