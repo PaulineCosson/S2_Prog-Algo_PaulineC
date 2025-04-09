@@ -3,9 +3,6 @@
 #include <stack>
 #include <iostream>
 
-
-
-
 Token make_token(float value){
     Token token{}; 
     token.type = TokenType::OPERAND;
@@ -30,15 +27,14 @@ std::vector<Token> tokenize(std::vector<std::string> const& words){
         else if (word == "-"){
             tokens.push_back(make_token(Operator::SUB));
         }
-        if (word == "*"){
+        else if (word == "*"){
             tokens.push_back(make_token(Operator::MUL));
         }
         else if (word == "/"){
             tokens.push_back(make_token(Operator::DIV));
         }
         else {
-            // float value = std::stof(word);
-            tokens.push_back(make_token(4));
+            tokens.push_back(make_token(std::stof(word)));
         }
     }
     return (tokens);
