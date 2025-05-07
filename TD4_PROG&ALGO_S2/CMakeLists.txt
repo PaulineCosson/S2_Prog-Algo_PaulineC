@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(${FolderName}_Project)
+project(TD4_Project)
 
 # Trouve tous les fichiers .cpp dans mon répertoire src
 file(GLOB CPP_FILES src/*.cpp)
