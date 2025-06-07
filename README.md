@@ -8,3 +8,5 @@ J'ai appliqué le conseil d'utiliser un std::swap dans l'exo 1 et j'ai fini l'ex
 J'ai fini les exos 2 et 3.
 
 ## TD6 - Arbres binaires de recherche
+J'ai corrigé la méthode insert puis j'ai fini l'exo 1 et 2. 
+
