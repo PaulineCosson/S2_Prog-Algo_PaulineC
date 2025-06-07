@@ -41,22 +41,31 @@ int main()
 
     int sum { std::accumulate(vect.begin(), vect.end(), 0, [](int acc, int current_element) { return acc + current_element; }) };
     std::cout << '\n' << "La somme des éléments du vecteur est " << sum << std::endl;
-
-
+    std::cout << std::endl;
 
 
     //exercice 2
     //1/
-
     std::string str {"J\'aime beaucoup la prog, c'est super rigolo"};
+    int wordLength {firstWordLength(str)};
+    std::cout << str << "\nLe premier mot a " << wordLength << " caractères" << std::endl;
 
-    // int numLettres (std::string const & str){
-    //     auto const is_space = [](char letter){ return letter == ' '; };
-    
-    //     auto it (std::find_if (vect.begin(), vect.end(), is_space));
-    // }
+    //2/
+    std::vector<std::string> wordTab {split_string(str)};
+    for (const auto& word : wordTab) {
+        std::cout << word << " ";
+    }
+    std::cout << std::endl;
 
 
 
-    
+    //exercice 3
+    std::string pal {"kayak"};
+    if(isPalindrome (pal)){
+        std::cout << pal << " est un palindrome" << std::endl;
+    }
+    else{
+        std::cout << pal << " n'est pas un palindrome" << std::endl;
+    }
 }
+
