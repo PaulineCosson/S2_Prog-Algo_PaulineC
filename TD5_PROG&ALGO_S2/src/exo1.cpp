@@ -26,7 +26,7 @@ size_t polynomial_rolling_hash(const std::string& s, size_t p, size_t m){
     size_t power{1};
     for (int i{0}; i< s.size(); i++) {
         power *= p;
-        hash += static_cast<size_t>(s[i])*power;
+        hash += (static_cast<size_t>(s[i])*power)%m;
         hash %= m;
     }
     return hash;

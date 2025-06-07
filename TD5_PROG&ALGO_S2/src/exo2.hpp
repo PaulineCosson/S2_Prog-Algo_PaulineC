@@ -4,6 +4,10 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include <functional>
+#include <random>
+#include <algorithm>
+#include <iterator>
 
 enum class Insect {
     ClassicBee,
@@ -48,7 +52,6 @@ const std::unordered_map<Insect, std::string> insect_to_string = {
     {Insect::GuimielBee, "GuimielBee"}
 };
 
-#include <vector>
 const std::vector<int> expected_insect_counts {
     75, // ClassicBee
     50, // Ladybug
@@ -63,5 +66,9 @@ const std::vector<int> expected_insect_counts {
     5, // GuimielBee
 };
 
-std::vector<std::pair<Insect, int>> get_insect_observations;
+std::vector<std::pair<Insect, int>> get_insect_observations(
+    size_t const number_of_observations,
+    std::vector<float> const& insect_probabilities,
+    unsigned int const seed = std::random_device{}()
+);
 std::vector<float> probabilities_from_count(std::vector<int> const& counts);
